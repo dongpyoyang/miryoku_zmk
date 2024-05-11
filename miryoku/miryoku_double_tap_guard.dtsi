@@ -1,6 +1,12 @@
 // Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+MIRYOKU_CHANGE_LAYOUT_WITH_LANGUAGE(BASE)
+MIRYOKU_CHANGE_LAYOUT_WITH_LANGUAGE(EXTRA)
+
+MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_change_BASE, &u_chage_BASE)
+MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_change_EXTRA, &u_chage_EXTRA)
+
 #define MIRYOKU_DOUBLE_TAP_GUARD(NAME, BINDING) \
 / { \
   behaviors { \
@@ -25,8 +31,3 @@ MIRYOKU_DOUBLE_TAP_GUARD(u_soft_off, &soft_off)
 MIRYOKU_DOUBLE_TAP_GUARD(u_bootloader, &bootloader)
   #endif
 #endif
-
-MIRYOKU_CHANGE_LAYOUT_WITH_LANGUAGE(BASE)
-MIRYOKU_CHANGE_LAYOUT_WITH_LANGUAGE(EXTRA)
-MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_change_BASE, &u_chage_BASE)
-MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_change_EXTRA, &u_chage_EXTRA)

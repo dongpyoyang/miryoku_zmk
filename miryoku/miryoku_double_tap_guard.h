@@ -18,10 +18,4 @@
 #endif
 
 #define MIRYOKU_CHANGE_LAYOUT_WITH_LANGUAGE(CODE) \
-U_MACRO(u_chage_##CODE, \
-        bindings = <&to CODE>, \
-                   <&macro_press &kp LSHFT>, \
-                   <&macro_tap &kp SPACE>, \
-                   <&macro_release &kp LSHFT> \
-                   ;\
-)
+U_MACRO(u_chage_##CODE, bindings = <&to CODE>, <&macro_press &kp LSHFT>, <&macro_tap &kp SPACE>, <&macro_release &kp LSHFT>;)
