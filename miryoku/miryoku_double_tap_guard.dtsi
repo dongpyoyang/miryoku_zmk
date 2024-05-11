@@ -1,6 +1,9 @@
 // Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+U_MACRO(u_chage_BASE, bindings = <&to 0>, <&macro_press &kp LSHFT>, <&macro_tap &kp SPACE>, <&macro_release &kp LSHFT>;)
+U_MACRO(u_chage_EXTRA, bindings = <&to 1>, <&macro_press &kp LSHFT>, <&macro_tap &kp SPACE>, <&macro_release &kp LSHFT>;)
+
 #define MIRYOKU_DOUBLE_TAP_GUARD(NAME, BINDING) \
 / { \
   behaviors { \
@@ -12,6 +15,9 @@
     }; \
   }; \
 };
+
+MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_change_BASE, &u_chage_BASE)
+MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_change_EXTRA, &u_chage_EXTRA)
 
 #define MIRYOKU_X(LAYER, STRING) \
 MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_##LAYER, &to U_##LAYER)
