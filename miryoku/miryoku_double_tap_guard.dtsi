@@ -1,7 +1,7 @@
 // Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-U_MACRO(u_chage_BASE, bindings = <&macro_press &kp LSHFT>, <&macro_tap &kp SPACE> <&macro_release &kp LSHFT>;)
+U_MACRO(u_chage_BASE, bindings = <&macro_press &kp LSHFT>, <&macro_tap &kp SPACE>, <&macro_release &kp LSHFT>;)
 U_MACRO(u_chage_EXTRA, bindings = <&to 1>;)
 
 #define MIRYOKU_DOUBLE_TAP_GUARD(NAME, BINDING) \
