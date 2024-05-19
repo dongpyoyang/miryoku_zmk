@@ -3,6 +3,8 @@
 
 U_MACRO(u_chage_BASE, bindings = <&to 0>, <&macro_press &kp LSHFT>, <&macro_tap &kp SPACE>, <&macro_release &kp LSHFT>;)
 U_MACRO(u_chage_EXTRA, bindings = <&to 1>, <&macro_press &kp LSHFT>, <&macro_tap &kp SPACE>, <&macro_release &kp LSHFT>;)
+U_MACRO(u_chage_rBASE, bindings = <&to 0>, <&kp RALT>;)
+U_MACRO(u_chage_rEXTRA, bindings = <&to 1>, <&kp RALT>;)
 
 #define MIRYOKU_DOUBLE_TAP_GUARD(NAME, BINDING) \
 / { \
@@ -18,6 +20,8 @@ U_MACRO(u_chage_EXTRA, bindings = <&to 1>, <&macro_press &kp LSHFT>, <&macro_tap
 
 MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_change_BASE, &u_chage_BASE)
 MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_change_EXTRA, &u_chage_EXTRA)
+MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_change_BASE, &u_chage_rBASE)
+MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_change_EXTRA, &u_chage_rEXTRA)
 
 #define MIRYOKU_X(LAYER, STRING) \
 MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_##LAYER, &to U_##LAYER)
