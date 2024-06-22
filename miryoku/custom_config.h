@@ -24,10 +24,14 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_GAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_GAV, SPACE),U_MT(LSHFT, TAB),  U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_GAV \
-&kp N1,            &kp N2,            &kp N3,            &kp N4,            U_NA,              &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
+&kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp LALT,          &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+U_NA,              U_NA,              U_NA,              U_NA,              &kp LCTRL,         &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 U_NA,              U_NA,              U_NA               U_NA,              U_NA,              &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+
+#define MIRYOKU_LAYER_GAME MIRYOKU_ALTERNATIVES_GAME
+
+#define MIRYOKU_LAYER_GAME MIRYOKU_ALTERNATIVES_GAV
