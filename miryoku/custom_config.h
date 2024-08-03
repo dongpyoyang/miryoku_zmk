@@ -62,3 +62,5 @@ MIRYOKU_X(GAV,    "Gav")
 #define U_FUN    9
 #define U_GAME   10
 #define U_GAV    11
+
+#define MIRYOKU_KLUDGE_MOUSEKEYSPR
