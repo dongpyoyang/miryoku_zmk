@@ -64,3 +64,4 @@ MIRYOKU_X(GAV,    "Gav")
 #define U_GAV    11
 
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
+#define U_MOUSE_MOVE_TIME 3000
