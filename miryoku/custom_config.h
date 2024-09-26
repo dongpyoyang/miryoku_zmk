@@ -87,6 +87,8 @@ MIRYOKU_X(MSK2,   "Msk2")
 #define U_GAME   10
 #define U_GAV    11
 #define U_MABI   12
+#define U_MSK    13
+#define U_MSK2   14
 
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 #define U_MOUSE_MOVE_TIME 3000
