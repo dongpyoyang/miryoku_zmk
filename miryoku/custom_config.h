@@ -3,23 +3,35 @@
 
 #define XXX &none
 
+#define MIRYOKU_LAYER_GAME \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+&kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
+&kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_GAV, SPACE),U_MT(LSHFT, TAB),  U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+
+#define MIRYOKU_LAYER_GAV \
+&kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp LALT,          &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+U_NA,              U_NA,              U_NA,              U_NA,              &kp LCTRL,         &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
+U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+
 #define MIRYOKU_LAYER_MABI \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(MIRYOKU_LAYER_MSK, SPACE),U_MT(MIRYOKU_LAYER_MSK2, TAB),  U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,  U_NP
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_MSK, SPACE),U_MT(U_MSK2, TAB),  U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 #define MIRYOKU_LAYER_MSK \
-&kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
-&kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp EQUAL,         U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
-&kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,          U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA
+&kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp LALT,          &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+U_NA,              U_NA,              U_NA,              U_NA,              &kp LCTRL,         &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
+U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_MSK2 \
-&kp F12,           &kp F7,            &kp F8,            &kp F9,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
-&kp F11,           &kp F4,            &kp F5,            &kp F6,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
-&kp F10,           &kp F1,            &kp F2,            &kp F3,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA
+&kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp LALT,          &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+U_NA,              U_NA,              U_NA,              U_NA,              &kp LCTRL,         &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
+U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 // Change
 #define MIRYOKU_LAYER_MEDIA \
@@ -50,12 +62,16 @@ MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
+MIRYOKU_X(GAME,   "Game") \
+MIRYOKU_X(GAV,    "Gav") \
 MIRYOKU_X(MABI,   "Mabi") \
 MIRYOKU_X(MSK,    "Msk") \
 MIRYOKU_X(MSK2,   "Msk2")
 
+#define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_GAV  MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_MABI MIRYOKU_MAPPING
-#define MIRYOKU_LAYERMAPPING_MSK MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_MSK  MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_MSK2 MIRYOKU_MAPPING
 
 #define U_BASE   0
@@ -68,9 +84,11 @@ MIRYOKU_X(MSK2,   "Msk2")
 #define U_NUM    7
 #define U_SYM    8
 #define U_FUN    9
-#define U_MABI   10
-#define U_MSK    11
-#define U_MSK2   12
+#define U_GAME   10
+#define U_GAV    11
+#define U_MABI   12
+#define U_MSK    13
+#define U_MSK2   14
 
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 #define U_MOUSE_MOVE_TIME 3000
