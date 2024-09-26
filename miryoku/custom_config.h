@@ -19,7 +19,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_MSK, SPACE),U_MT(U_MSK2, TAB),  U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_MSK, SPACE),U_LT(U_MSK2, TAB), U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 #define MIRYOKU_LAYER_MSK \
 &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
