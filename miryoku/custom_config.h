@@ -3,18 +3,6 @@
 
 #define XXX &none
 
-#define MIRYOKU_LAYER_GAME \
-&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-&kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
-&kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_GAV, SPACE),U_MT(LSHFT, TAB),  U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
-
-#define MIRYOKU_LAYER_GAV \
-&kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp LALT,          &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-U_NA,              U_NA,              U_NA,              U_NA,              &kp LCTRL,         &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
-U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
-
 #define MIRYOKU_LAYER_MABI \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
@@ -46,7 +34,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&u_to_U_GAME K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &u_to_U_MABI \
+&u_to_U_change_rBASE K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &u_to_U_MABI \
 &kp LCTRL    K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  &u_to_U_change_BASE \
 &kp LSHIFT   K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &u_to_U_change_EXTRA \
                        K32  K33  K34       K35  K36  K37
@@ -62,8 +50,6 @@ MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
-MIRYOKU_X(GAME,   "Game") \
-MIRYOKU_X(GAV,    "Gav") \
 MIRYOKU_X(MABI,   "Mabi") \
 MIRYOKU_X(MSK,    "Msk") \
 MIRYOKU_X(MSK2,   "Msk2")
@@ -84,11 +70,9 @@ MIRYOKU_X(MSK2,   "Msk2")
 #define U_NUM    7
 #define U_SYM    8
 #define U_FUN    9
-#define U_GAME   10
-#define U_GAV    11
-#define U_MABI   12
-#define U_MSK    13
-#define U_MSK2   14
+#define U_MABI   10
+#define U_MSK    11
+#define U_MSK2   12
 
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 #define U_MOUSE_MOVE_TIME 3000
