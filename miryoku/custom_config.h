@@ -15,6 +15,24 @@ U_NA,              U_NA,              U_NA,              U_NA,              &kp 
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
+#define MIRYOKU_LAYER_MABI \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+&kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
+&kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(MIRYOKU_LAYER_MSK, SPACE),U_MT(MIRYOKU_LAYER_MSK2, TAB),  U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+
+#define MIRYOKU_LAYER_MSK \
+&kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
+&kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp EQUAL,         U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
+&kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,          U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,
+
+#define MIRYOKU_LAYER_MSK2 \
+&kp F12,           &kp F7,            &kp F8,            &kp F9,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
+&kp F11,           &kp F4,            &kp F5,            &kp F6,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
+&kp F10,           &kp F1,            &kp F2,            &kp F3,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,
+
 // Change
 #define MIRYOKU_LAYER_MEDIA \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RGB_TOG,         U_RGB_EFF,         U_RGB_HUI,         U_RGB_SAI,         U_RGB_BRI,         \
@@ -28,10 +46,10 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&u_to_U_GAME          K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  XXX \
-&u_to_U_change_rBASE  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  &u_to_U_change_BASE \
-&u_to_U_change_rEXTRA K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &u_to_U_change_EXTRA \
-                                K32  K33  K34       K35  K36  K37
+&u_to_U_GAME K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &u_to_U_MABI \
+&kp LCTRL    K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  &u_to_U_change_BASE \
+&kp LSHIFT   K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &u_to_U_change_EXTRA \
+                       K32  K33  K34       K35  K36  K37
 
 #define MIRYOKU_LAYER_LIST \
 MIRYOKU_X(BASE,   "Base") \
@@ -45,10 +63,14 @@ MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
 MIRYOKU_X(GAME,   "Game") \
-MIRYOKU_X(GAV,    "Gav")
+MIRYOKU_X(GAV,    "Gav") \
+MIRYOKU_X(MABI,   "Mabi") \
+MIRYOKU_X(MSK,    "Msk") \
+MIRYOKU_X(MSK2,   "Msk2")
 
 #define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_GAV  MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_MABI MIRYOKU_MAPPING
 
 #define U_BASE   0
 #define U_EXTRA  1
@@ -62,6 +84,7 @@ MIRYOKU_X(GAV,    "Gav")
 #define U_FUN    9
 #define U_GAME   10
 #define U_GAV    11
+#define U_MABI   12
 
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 #define U_MOUSE_MOVE_TIME 3000
