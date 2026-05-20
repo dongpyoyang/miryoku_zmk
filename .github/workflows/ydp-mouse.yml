@@ -7,4 +7,4 @@ jobs:
     with:
       board: '["nice_nano//zmk"]'
       shield: '["corne_left","corne_right"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_SLEEP=y\nCONFIG_ZMK_RGB_UNDERGLOW=y\nCONFIG_WS2812_STRIP=y\nCONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000\n"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_SLEEP=y\nCONFIG_ZMK_RGB_UNDERGLOW=y\nCONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000\n"]'
